@@ -212,12 +212,6 @@ async def _(event):
 
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.صيد (.*)"))
 async def _(event):
-	try:
-    	await sython(functions.channels.JoinChannelRequest(
-    	channel='b_bzb'
-    	))
-    except:
-    	pass
     if ispay2[0] == "yes":
         isclaim.clear()
         isclaim.append("on")
