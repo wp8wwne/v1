@@ -261,13 +261,7 @@ async def _(event):
 ⤷ Type : #{choice}
 ⤷ Max : ( @B_BzB )
     ''')
-	try:
-    	await sython(functions.channels.JoinChannelRequest(
-    	channel='S3S_3S'
-    	))
-    except:
-    	pass
-                    await event.client.send_file("S3S_3S", "https://t.me/x_o_x/698", caption=f'''
+                    await event.client.send_file("@P8_PPBOT", "https://t.me/x_o_x/698", caption=f'''
 ⌯ Source Max ! 🐊
 ⤷ User : @{username} 
 ⤷ Clicks : {trys} 
