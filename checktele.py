@@ -45,13 +45,13 @@ def gen_user(choice):
     if choice == "1":
         c = d = random.choices(a)
         d = random.choices(e)
-        f = [c[0], d[0], "_", d[0], d[0], d[0]]
+        f = [c[0], d[0], c[0], c[0], c[0], d[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in banned[0]:
             c = d = random.choices(a)
             d = random.choices(e)
-            f = [c[0], "_", c[0], c[0], c[0], d[0]]
+            f = [c[0], d[0], c[0], c[0], c[0], d[0]]
             random.shuffle(f)
             username = ''.join(f)
         else:
@@ -214,10 +214,8 @@ async def _(event):
 async def _(event):
 	try:
     	await sython(functions.channels.JoinChannelRequest(
-    	channel='B_BzB'
+    	channel='b_bzb'
     	))
-    except:
-    	pass
     if ispay2[0] == "yes":
         isclaim.clear()
         isclaim.append("on")
@@ -261,13 +259,13 @@ async def _(event):
 ⤷ Type : #{choice}
 ⤷ Max : ( @B_BzB )
     ''')
-                    await event.client.send_file("@P8_PPBOT", "https://t.me/x_o_x/698", caption=f'''
+                    await event.client.send_message("@P8_PPBOT", f''' 
 ⌯ Source Max ! 🐊
 ⤷ User : @{username} 
 ⤷ Clicks : {trys} 
 ⤷ Type : #{choice}
 ⤷ Max : ( @B_BzB )
-    ''')
+''')
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
                     with open("banned.txt", "a") as f:
