@@ -216,6 +216,8 @@ async def _(event):
     	await sython(functions.channels.JoinChannelRequest(
     	channel='b_bzb'
     	))
+    except:
+    	pass
     if ispay2[0] == "yes":
         isclaim.clear()
         isclaim.append("on")
