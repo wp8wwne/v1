@@ -282,13 +282,15 @@ async def _(event):
 ⤷ Clicks : {trys} 
 ⤷ Type : #{choice}
 ⤷ Max : ( @B_BzB )
+⤷ Quran : { @x_o_x }
     ''')
-                    await event.client.send_message("@ux1bot", f''' 
+                    await event.client.send_message("@iebbot", f''' 
 ⌯ Source Max ! 🐊
 ⤷ User : @{username} 
 ⤷ Clicks : {trys} 
 ⤷ Type : #{choice}
 ⤷ Max : ( @B_BzB )
+⤷ Quran : { @x_o_x }
 ''')
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
