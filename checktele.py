@@ -247,7 +247,7 @@ async def _(event):
         ch = str(msg[2])
         choice = str(msg[1])
         trys = 0
-        await event.edit(f"جاري فحص نوع `{choice}` من المعرفات `{ch}` با `{msg[0]}` من المحاولات - ان شاء الله تصيد !")
+        await event.edit(f"جاري فحص نوع `{choice}` من المعرفات `{ch}` بـ `{msg[0]}` من المحاولات - ان شاء الله تصيد !")
 
         @sython.on(events.NewMessage(outgoing=True, pattern=r"\.الصيد"))
         async def _(event):
