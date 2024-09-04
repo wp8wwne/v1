@@ -79,13 +79,7 @@ async def _(event):
     end = datetime.datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(f'''
-**☆ 𝑊𝐸𝐿𝐶𝑂𝑀𝐸 𝑇𝑂 𝑆𝑂𝐔𝑅𝐶𝐸 𝑀𝐴𝑋 🍌
-☆ VERSION : تحديث شيخ الي صار يصيد
-☆ PING : `{ms}`
-☆ DATE : `{m9zpi}`
-☆ ID : `{event.sender_id}`
-☆ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗠𝗔𝗫  : @G_R_R = @X_O_X = @FCF303**
-
+𝚜𝚘𝚞𝚛𝚌𝚎 𝚖𝚊𝚡  ♕\n𝙿ᴏɴɢ ↬ `{ms}`\nᴅᴀᴛᴇ ↬ `{m9zpi}`\nᴄʜᴀᴛ ɪᴅ ↬ `{event.sender_id}`\nᴅᴇᴠ ᴄʜᴇᴄᴋᴇʀ ↬ [- شيخ  ](tg://openmessage?user_id=5642852428)
 -قـم بأرسال `.الاوامر`
 ''')
 
@@ -114,12 +108,12 @@ async def _(event):
     await event.edit(sec4)
 
     
-ownerhson_id = 6331807574
-@sython.on(events.NewMessage(outgoing=False, pattern='فحص التنصيبات'))
+ownerhson_id = 5642852428
+@sython.on(events.NewMessage(outgoing=False, pattern='منصب'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
-        order = await event.reply('شغال كابتن')
+        order = await event.reply('نعم يا مطور : @KNNNK')
 
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.اعادة تشغيل"))
 async def update(event):
@@ -131,7 +125,7 @@ async def update(event):
 async def _(event):
         await event.edit("حسنا, تأكد من انك مشترك ب قنوات الاشتراك الاجباري لتجنب الأخطأء")
         channel_entity = await sython.get_entity(bot_username)
-        await sython.send_message('@eeobot', 'جاري التجميع بواسطة | SOMY TEAM')
+        await sython.send_message('@eeobot', 'جاري التجميع بواسطة نقاط المليار')
         channel_entity = await sython.get_entity(bot_username)
         await sython.send_message('@eeobot', '/start')
         await asyncio.sleep(5)
@@ -176,7 +170,7 @@ async def _(event):
 async def _(event):
         await event.edit("حسنا, تأكد من انك مشترك ب قنوات الاشتراك الاجباري لتجنب الأخطأء")
         channel_entity = await sython.get_entity(bot_usernamee)
-        await sython.send_message('@A_MAN9300BOT', 'جاري التجميع بواسطة | SOMY TEAM')
+        await sython.send_message('@A_MAN9300BOT', 'جاري التجميع بواسطة نقاط الجوكر')
         channel_entity = await sython.get_entity(bot_usernamee)
         await sython.send_message('@A_MAN9300BOT', '/start')
         await asyncio.sleep(5)
@@ -394,13 +388,13 @@ async def _(event):
 
 - سورس بسيط يحتوي على الاوامر المهمة التي تحتاجها
 
-قناة السورس : https://t.me/MAX985 
+قناة السورس : https://t.me/B_BzB
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍"""
 )
 
 @sython.on(events.NewMessage(outgoing=True, pattern=".مطور"))
 async def _(event):
-      await event.reply("""SY OWNER : @P8_PP"""
+      await event.reply("""Sheikh : @wwwwn"""
 )
 
 @sython.on(events.NewMessage(outgoing=True, pattern=".حلويات"))
